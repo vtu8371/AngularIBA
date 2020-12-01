@@ -1,0 +1,12 @@
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    background-color: rgb(158, 173, 173);
+}
+.container{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}

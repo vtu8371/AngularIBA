@@ -1,0 +1,37 @@
+h2{
+    text-align: center;
+    color: darkblue;
+    width: 60%;
+    background-color: lightpink;
+    font-style: italic;
+    margin-left: 20%;
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    background-color: lightsteelblue;
+}
+table{
+    width: 10%;
+}
+tr{
+    height: 70px;
+    text-align: center;
+}
+th{
+    height: 50px;
+    text-align: center;
+    background-color: lightslategrey;
+    font-style: italic;
+}
+.container {
+    background-color:lightsteelblue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }

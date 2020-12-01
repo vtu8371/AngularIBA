@@ -1,0 +1,12 @@
+h2{
+    background-color: lightgreen;
+    text-align: center;
+}
+.tablecss{
+    background-color:lightblue;
+    width: 50%;
+    border-color: navy;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}

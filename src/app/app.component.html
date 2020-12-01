@@ -1,0 +1,21 @@
+<div class="navbar">
+<a [routerLink]="['/home']">Home</a>
+<a [routerLink]="['/contact']">Contact</a>
+<a [routerLink]="['/signIn']">SignIn</a>
+<a [routerLink]="['/signUp']">SignUp</a>
+<h3>Welcome To Internet Banking System</h3>
+</div>
+
+<app-sign-in (parentFunction)="parentComponent($event)" [child]="input"></app-sign-in>
+
+
+<div *ngIf="checker=='Admin'">
+<a href="admin">Admin</a>
+</div>
+<div *ngIf="checker=='Customer'">
+<a href="customer">Customer</a>
+<router-outlet></router-outlet>
+</div>
+
+<router-outlet></router-outlet>
+<app-footer></app-footer>

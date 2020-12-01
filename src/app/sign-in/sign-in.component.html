@@ -1,0 +1,15 @@
+<br>
+<br>
+<br>
+<br>
+
+<div class="container" *ngIf="child!='notShow'">
+    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+        <input type="number" ngModel name="userId" placeholder="Enter Your UserId"><br><br>
+        <input type="password" bgModel name="password" placeholder="Enter Your Password"><br><br>
+        <input type="radio" ngModel name="role" value="Admin"><label for="admin">Admin</label>
+        <input type="radio" ngModel name="role" value="Customer"><label for="customer">Customer</label><br><br>
+        <button type="submit">SignIn</button>
+    </form>
+</div>
+<router-outlet></router-outlet>
