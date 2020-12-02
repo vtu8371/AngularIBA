@@ -1,21 +1,35 @@
+
+<!--<div class="container">
+<button type="button" class="btn btn-outline-secondary mr-2" placement="top"
+        ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popoverTitle="Popover on top">
+        <button class="btn" [routerLink]="['/home']"><i class="fa fa-home"></i> Home</button>
+</button>
+
+<button type="button" class="btn btn-outline-secondary mr-2" placement="right"
+        ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popoverTitle="Popover on right">
+        <button class="btn" [routerLink]="['/contact']"><i class="fa fa-home"></i> Gallary</button>
+</button>
+
+<button type="button" class="btn btn-outline-secondary mr-2" placement="bottom"
+        ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popoverTitle="Popover on bottom">
+        <button class="btn" [routerLink]="['/signIn']"><i class="fa fa-home"></i> SignIn</button>
+</button>
+
+<button type="button" class="btn btn-outline-secondary mr-2" placement="left"
+        ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popoverTitle="Popover on left">
+        <button class="btn" [routerLink]="['/signUp']"><i class="fa fa-home"></i> SignUp</button>
+</button>
+</div>-->
 <div class="navbar">
-<a [routerLink]="['/home']">Home</a>
-<a [routerLink]="['/contact']">Contact</a>
-<a [routerLink]="['/signIn']">SignIn</a>
-<a [routerLink]="['/signUp']">SignUp</a>
-<h3>Welcome To Internet Banking System</h3>
-</div>
-
-<app-sign-in (parentFunction)="parentComponent($event)" [child]="input"></app-sign-in>
-
-
-<div *ngIf="checker=='Admin'">
-<a href="admin">Admin</a>
-</div>
-<div *ngIf="checker=='Customer'">
-<a href="customer">Customer</a>
-<router-outlet></router-outlet>
-</div>
+        <a [routerLink]="['/home']">Home</a>
+        <a [routerLink]="['/contact']">AboutUs</a>
+        <a [routerLink]="['/signIn']">SignIn</a>
+        <a [routerLink]="['/signUp']">SignUp</a>
+      </div>
+      
+      <div class="main">
+        <p>Some text some text some text some text..</p>
+      </div>
 
 <router-outlet></router-outlet>
 <app-footer></app-footer>

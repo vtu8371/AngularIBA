@@ -1,73 +1,85 @@
-<h2>Beneficiary</h2>
+
 <br>
-<table border="3" class="center">
-    <th>
-        BeneficiaryId
-    </th>
-    <th>
-        BeneficiaryName
-    </th>
-    <th>
-        BeneficiaryAccountNo
-    </th>
-    <th>
-        IFSC Code
-    </th>
-    <th>
-        AccountType
-    </th>
-    <th>
-        Action
-    </th>
-    <tr>
-        <td>
-            123231
-        </td>
-        <td>
-            Venkatesh Kumar
-        </td>
-        <td>2223456877</td>
-        <td>SBI0023451</td>
-        <td>Saving Account</td>
-        <td>
-            <div class="container">
-                <button>Edit</button><br>
-                <br><button>Delete</button>
-            </div>
-         </td>
-    </tr>
-    <tr>
-        <td>
-            123231
-        </td>
-        <td>
-            Venkatesh Kumar
-        </td>
-        <td>2223456877</td>
-        <td>SBI0023451</td>
-        <td>Saving Account</td>
-        <td>
-            <div class="container">
-                <button>Edit</button><br>
-                <br><button>Delete</button>
-            </div>
-         </td>
-    </tr>
-    <tr>
-        <td>
-            123231
-        </td>
-        <td>
-            Venkatesh Kumar
-        </td>
-        <td>2223456877</td>
-        <td>SBI0023451</td>
-        <td>Saving Account</td>
-        <td>
-            <div class="container">
-                <button>Edit</button><br>
-                <br><button>Delete</button>
-            </div>
-         </td>
-    </tr>
-</table>
+<div class="container">
+    <h2>Beneficiary List of Details</h2>
+    <br>        
+    <table class="table table-dark">
+      <thead>
+        <tr>
+            <th>
+                BeneficiaryId
+            </th>
+            <th>
+                BeneficiaryName
+            </th>
+            <th>
+                BeneficiaryAccountNo
+            </th>
+            <th>
+                IFSC Code
+            </th>
+            <th>
+                AccountType
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>
+                123231
+            </td>
+            <td>
+                Venkatesh Kumar
+            </td>
+            <td>2223456877</td>
+            <td>SBI0023451</td>
+            <td>Saving Account</td>
+            
+            <td>
+                <button type="button" class="btn btn-primary">Update</button>&nbsp;
+                <button type="button" class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                123231
+            </td>
+            <td>
+                Venkatesh Kumar
+            </td>
+            <td>2223456877</td>
+            <td>SBI0023451</td>
+            <td>Saving Account</td>
+            
+            <td>
+                <button type="button" class="btn btn-primary">Update</button>&nbsp;
+                <button type="button" class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                123231
+            </td>
+            <td>
+                Venkatesh Kumar
+            </td>
+            <td>2223456877</td>
+            <td>SBI0023451</td>
+            <td>Saving Account</td>
+           
+            <td>
+                <button type="button" class="btn btn-primary">Update</button>&nbsp;
+                <button type="button" class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+<div class="center">
+<button type="button" class="btn btn-success">Add</button>&nbsp;
+<button type="button" class="btn btn-dark" (click)="cancel()">Back</button>
+</div>

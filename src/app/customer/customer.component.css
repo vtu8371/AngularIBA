@@ -6,11 +6,12 @@ h2{
     font-style: oblique;
     overflow: auto;
 }
+h3{
+    text-align: end;
+}
 .center{
     margin-left: auto;
     margin-right: auto;
-    border-collapse: collapse;
-    background-color: cadetblue;
 }
 table{
     width: 60%;

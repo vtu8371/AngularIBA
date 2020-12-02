@@ -1,23 +1,16 @@
-<h2>Account Operations</h2>
-<table border="3" class="center">
+<br><h2>Account Operations</h2><br>
+<table  class="center">
     <tr>
         <td>
-            <span style="text-align: center; display: block;">
-                <button routerLink="transferMoney" class="button">TransferMoney</button>
-              </span>
+              <button type="button" class="btn btn-primary" (click)="goToTransferMoney()">TransferMoney</button>
         </td>
 
         <td>
-            <span style="text-align: center; display: block;">
-                <button routerLink="withdrawMoney" class="button">WithdrawMoney</button>
-            </span>
+            <button type="button" class="btn btn-danger" (click)="goToWithdrawMoney()">WithdrawMoney</button>
         </td>
    
        <td>
-        <span style="text-align: center; display: block;">
-            <button routerLink="depositMoney" class="button">DepositMoney</button>
-          </span>
+          <button type="button" class="btn btn-success" (click)="goToDepositMoney()">DepositMoney</button>
        </td>
     </tr>
 </table>
-<router-outlet></router-outlet>

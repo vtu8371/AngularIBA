@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-account',
   templateUrl: './account.component.html',
@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccountComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route:Router) { }
 
   ngOnInit(): void {
   }
-
+  goToTransferMoney(){
+    this.route.navigate(['./transferMoney']);
+  }
+  goToWithdrawMoney(){
+    this.route.navigate(['./withdrawMoney']);
+  }
+  goToDepositMoney(){
+    this.route.navigate(['./depositMoney']);
+  }
 }

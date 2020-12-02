@@ -1,35 +1,24 @@
-<h2>Customer Page</h2>
-<table border="3" class="center">
+<h2>Customer Page</h2><br>
+<table  class="center">
   <tr>
     <td>
-      <span style="text-align: center; display: block;">
-        <button routerLink="account" class="button">Account</button>
-      </span>
+     
+      <button type="button" class="btn btn-warning" routerLink="account" >Account</button>
     </td>
     <td>
-      <span style="text-align: center; display: block;">
-        <button routerLink="transaction" class="button">Transaction</button>
-      </span>
+      <button type="button" class="btn btn-warning" (click)="goToTransaction()" >Transaction</button>
     </td>
     <td>
-      <span style="text-align: center; display: block;">
-        <button routerLink="beneficiary" class="button">Beneficiary</button>
-      </span>
+      <button type="button" class="btn btn-warning" (click)="goToBeneficiary()">Beneficiary</button>
     </td>
     <td>
-      <span style="text-align: center; display: block;">
-        <button routerLink="nominee" class="button">Nominee</button>
-      </span>
+      <button type="button" class="btn btn-warning" (click)="goToNominee()">Nominee</button>
     </td>
     <td>
-      <span style="text-align: center; display: block;">
-        <button routerLink="myProfile" class="button">MyProfile</button>
-      </span>
+      <button type="button" class="btn btn-warning" (click)="goToMyProfile()">MyProfile</button>
     </td>
     <td>
-      <span style="text-align: center; display: block;">
-        <button routerLink="signOut" class="button">SignOut</button>
-      </span>
+      <button type="button" class="btn btn-warning" routerLink="signOut">SignOut</button>
     </td>
   </tr>
 </table>

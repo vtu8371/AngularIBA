@@ -1,16 +1,31 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AccountComponent } from './account/account.component';
+import { AddAccountComponent } from './accountOperation/add-account/add-account.component';
+import { CloseAccountComponent } from './accountOperation/close-account/close-account.component';
 import { DepositMoneyComponent } from './accountOperation/deposit-money/deposit-money.component';
+import { FindByIdAccountComponent } from './accountOperation/find-by-id-account/find-by-id-account.component';
+import { ListAccountComponent } from './accountOperation/list-account/list-account.component';
 import { TransferMoneyComponent } from './accountOperation/transfer-money/transfer-money.component';
 import { WithdrawMoneyComponent } from './accountOperation/withdraw-money/withdraw-money.component';
 import { AdminAccountComponent } from './admin-account/admin-account.component';
+import { AdminAdminComponent } from './admin-admin/admin-admin.component';
 import { AdminCustomerComponent } from './admin-customer/admin-customer.component';
+import { AdminUserComponent } from './admin-user/admin-user.component';
 import { AdminComponent } from './admin/admin.component';
+import { AddAdminComponent } from './adminOperation/add-admin/add-admin.component';
+import { DeleteAdminComponent } from './adminOperation/delete-admin/delete-admin.component';
+import { EditAdminComponent } from './adminOperation/edit-admin/edit-admin.component';
+import { ViewAllAdminComponent } from './adminOperation/view-all-admin/view-all-admin.component';
+import { ViewByIdAdminComponent } from './adminOperation/view-by-id-admin/view-by-id-admin.component';
 import { BeneficiaryComponent } from './beneficiary/beneficiary.component';
 import { ContactComponent } from './contact/contact.component';
 import { CustomerComponent } from './customer/customer.component';
 import { AddCustomerComponent } from './customerOperation/add-customer/add-customer.component';
+import { DeleteCustomerComponent } from './customerOperation/delete-customer/delete-customer.component';
+import { EditCustomerComponent } from './customerOperation/edit-customer/edit-customer.component';
+import { ViewAllCustomerComponent } from './customerOperation/view-all-customer/view-all-customer.component';
+import { ViewByIdCustomerComponent } from './customerOperation/view-by-id-customer/view-by-id-customer.component';
 import { HomeComponent } from './home/home.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
 import { NomineeComponent } from './nominee/nominee.component';
@@ -41,6 +56,15 @@ const routes: Routes = [
     path:"admin",
     component:AdminComponent,
     children:[
+      {
+        path:"adminAdmin",
+        component:AdminAdminComponent
+      },
+      
+      {
+        path:"adminUser",
+        component:AdminUserComponent
+      },
      {
       path:"adminCustomer",
       component:AdminCustomerComponent
@@ -54,6 +78,57 @@ const routes: Routes = [
        component:SignOutComponent
      }
    ]
+  },
+  {
+    path:"addAccount",
+    component:AddAccountComponent
+  },
+  {
+    path:"viewAllAccounts",
+    component:ListAccountComponent
+  },
+  {
+    path:"viewByIdAccount",
+    component:FindByIdAccountComponent
+  },
+  {
+    path:"deleteAccount",
+    component:CloseAccountComponent
+  },
+  {
+    path:"addAdmin",
+    component:AddAdminComponent
+  },
+  {
+    path:"viewAllAdmin",
+    component:ViewAllAdminComponent
+  },
+  {
+    path:"viewByIdAdmin",
+    component:ViewByIdAdminComponent
+  },
+  {
+    path:"deleteAdmin",
+    component:DeleteAdminComponent
+  },
+  {
+    path:"editAdmin",
+    component:EditAdminComponent
+  },
+  {
+    path:"addCustomer",component:AddCustomerComponent
+  },
+  {
+    path:"viewAllCustomer",component:ViewAllCustomerComponent
+  },
+  {
+    path:"viewByIdCustomer",component:ViewByIdCustomerComponent
+  },
+  {
+    path:"deleteCustomer",component:DeleteCustomerComponent
+  },
+  {
+    path:"editCustomer",component:EditCustomerComponent
   },
   {
     path:"customer",
@@ -129,6 +204,18 @@ const routes: Routes = [
   {
     path:"signOut",
     component:SignOutComponent
+  },
+  {
+    path:"transferMoney",
+    component:TransferMoneyComponent
+  },
+  {
+    path:"withdrawMoney",
+    component:WithdrawMoneyComponent
+  },
+  {
+    path:"depositMoney",
+    component:DepositMoneyComponent
   },
   {
     path:"**",

@@ -6,10 +6,12 @@
 }
 h3{
     text-align: center;
-    background-color: lime;
+    background-color: darkgreen;
     width: 60%;
     font-style: italic;
     margin-left: 20%;
+    font-family: "Times New Roman", Times, serif;
+    color: white;
 }
 .container{
     text-align: center;

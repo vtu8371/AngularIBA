@@ -1,11 +1,25 @@
 
-<h2>Admin Page</h2>
-
-<table border="3" class="tablecss">
-    <th><a routerLink="customer">Customer</a></th>
-    <th><a routerLink="account">Account</a></th>
-    <th><a routerLink="signOut">SignOut</a></th>
+<h2>Admin Page</h2><br>
+<table class="container">
+    <tr>
+        <td>
+            <button type="button" class="btn btn-primary" routerLink="adminAdmin">Admin</button>
+        </td>
+        <td>
+            <button type="button" class="btn btn-primary" routerLink="adminCustomer">Customer</button>
+        </td>
+        <td>
+            <button type="button" class="btn btn-primary" routerLink="adminAccount">Account</button>
+        </td>
+        <td>
+            <button type="button" class="btn btn-primary" routerLink="adminUser">User</button>
+        </td>
+        <td>
+            <button type="button" class="btn btn-primary" routerLink="signOut">SignOut</button>
+        </td>
+    </tr>
 </table>
+
 
 <router-outlet></router-outlet>
 <app-footer></app-footer>

@@ -3,31 +3,41 @@ h2{
     color: darkblue;
     width: 60%;
     background-color: lightpink;
-    font-style: italic;
     margin-left: 20%;
+    font-family: "Times New Roman", Times, serif;
 }
-.center{
-    margin-left: auto;
-    margin-right: auto;
-    border-collapse: collapse;
-    background-color: chartreuse;
-}
-table{
-    width: 10%;
-}
-tr{
-    height: 70px;
+h3{
     text-align: center;
-    background-color: lightgrey;
+    color: darkblue;
+    width: 60%;
+    background-color: lightpink;
+    margin-left: 20%;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.container{
+    text-align: center;
+}
+
+table{
+    width: 100%;
 }
 th{
     height: 50px;
     text-align: center;
-    background-color: lightskyblue;
-    font-style: italic;
+    background-color: mediumslateblue;
+    font-family: "Times New Roman", Times, serif;
 }
+tr{
+    height: 30px;
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+
 .button {
-    background-color:lightgrey;
+    background-color:blueviolet;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -36,3 +46,6 @@ th{
     display: inline-block;
     font-size: 16px;
   }
+.center{
+    text-align: center;
+}

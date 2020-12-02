@@ -1,49 +1,53 @@
-<h2>Transaction History</h2>
-<table border="3" class="center">
-    <th>Sender_AccountId</th>
-    <th>Receiver_AccountId</th>
-    <th>Amount_Transfer</th>
-    <th>Transaction_Status</th>
-    <th>Action</th>
-    <tr>
-        <td>123456781</td>
-        <td>876543211</td>
-        <td>1000.00</td>
-        <td>Failed</td>
-        <td>
-            <div class="container">
-                <button>Edit</button><br>
-                <br><button>Delete</button>
-            </div>
-         </td>
-    </tr>
-    <tr>
-        <td>123456782</td>
-        <td>876543212</td>
-        <td>40000.00</td>
-        <td>Successful</td>
-        <td>
-            <div class="container">
-                <button>Edit</button><br>
-                <br><button>Delete</button>
-            </div>
-         </td>
-    </tr>
-    <tr>
-        <td>123456783</td>
-        <td>876543213</td>
-        <td>6000.00</td>
-        <td>Successful</td>
-        <td>
-            <div class="container">
-                <button>Edit</button><br>
-                <br><button>Delete</button>
-            </div>
-         </td>
-    </tr>
-</table>
-<h3>Find Transaction By Id!</h3>
-<span style="text-align: center; display: block;">
-    <button routerLink="findById" class="button">Find It</button>
-</span>
-<router-outlet></router-outlet>
+<br>
+<div class="container">
+    <h2>Transaction History</h2>
+    <br>        
+    <table class="table table-dark">
+      <thead>
+        <tr>
+            <th>Sender_AccountId</th>
+            <th>Receiver_AccountId</th>
+            <th>Amount_Transfer</th>
+            <th>Transaction_Status</th>
+            <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>123456781</td>
+            <td>876543211</td>
+            <td>1000.00</td>
+            <td>Failed</td>
+            <td>
+                <button type="button" class="btn btn-primary">Update</button>&nbsp;
+                <button type="button" class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>123456782</td>
+            <td>876543212</td>
+            <td>40000.00</td>
+            <td>Successful</td>
+            <td>
+                <button type="button" class="btn btn-primary">Update</button>&nbsp;
+                <button type="button" class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>123456783</td>
+            <td>876543213</td>
+            <td>6000.00</td>
+            <td>Successful</td>
+            <td>
+                <button type="button" class="btn btn-primary">Update</button>&nbsp;
+                <button type="button" class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+<div class="center">
+<button type="button" class="btn btn-success">Add</button>&nbsp;
+<button type="button" class="btn btn-dark" (click)="cancel()">Back</button>
+</div>

@@ -3,13 +3,12 @@
 <br>
 <br>
 
-<div class="container" *ngIf="child!='notShow'">
-    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+<div class="container">
+    <form #userForm="ngForm" >
         <input type="number" ngModel name="userId" placeholder="Enter Your UserId"><br><br>
         <input type="password" bgModel name="password" placeholder="Enter Your Password"><br><br>
-        <input type="radio" ngModel name="role" value="Admin"><label for="admin">Admin</label>
-        <input type="radio" ngModel name="role" value="Customer"><label for="customer">Customer</label><br><br>
-        <button type="submit">SignIn</button>
+        <button type="button" class="btn btn-success" (click)="goToAdminPage()">SignIn as Admin</button>&nbsp;
+        <button type="button" class="btn btn-success" (click)="goToCustomerPage()">SignIn as Customer</button>
     </form>
 </div>
 <router-outlet></router-outlet>

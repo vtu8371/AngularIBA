@@ -30,6 +30,18 @@ import { AdminComponent } from './admin/admin.component';
 import { AddCustomerComponent } from './customerOperation/add-customer/add-customer.component';
 import { AdminCustomerComponent } from './admin-customer/admin-customer.component';
 import { AdminAccountComponent } from './admin-account/admin-account.component';
+import { AdminAdminComponent } from './admin-admin/admin-admin.component';
+import { AdminUserComponent } from './admin-user/admin-user.component';
+import { AddAdminComponent } from './adminOperation/add-admin/add-admin.component';
+import { ViewAllAdminComponent } from './adminOperation/view-all-admin/view-all-admin.component';
+import { ViewByIdAdminComponent } from './adminOperation/view-by-id-admin/view-by-id-admin.component';
+import { DeleteAdminComponent } from './adminOperation/delete-admin/delete-admin.component';
+import { EditAdminComponent } from './adminOperation/edit-admin/edit-admin.component';
+import { ViewAllCustomerComponent } from './customerOperation/view-all-customer/view-all-customer.component';
+import { ViewByIdCustomerComponent } from './customerOperation/view-by-id-customer/view-by-id-customer.component';
+import { DeleteCustomerComponent } from './customerOperation/delete-customer/delete-customer.component';
+import { EditCustomerComponent } from './customerOperation/edit-customer/edit-customer.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -59,12 +71,24 @@ import { AdminAccountComponent } from './admin-account/admin-account.component';
     AdminComponent,
     AddCustomerComponent,
     AdminCustomerComponent,
-    AdminAccountComponent
+    AdminAccountComponent,
+    AdminAdminComponent,
+    AdminUserComponent,
+    AddAdminComponent,
+    ViewAllAdminComponent,
+    ViewByIdAdminComponent,
+    DeleteAdminComponent,
+    EditAdminComponent,
+    ViewAllCustomerComponent,
+    ViewByIdCustomerComponent,
+    DeleteCustomerComponent,
+    EditCustomerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,19 +1,29 @@
-<h3>Fill Details!</h3>
-<table border="3" class="center">
-    <tr>
-        <td>Sender Account Id</td>
-        <td><input type="number" name="senderAccountId" placeholder="Enter your accountId"></td>
-    </tr>
-    <tr>
-        <td>Receiver Account Id</td>
-        <td><input type="number" name="receiverAccountId" placeholder="Enter receiver accountId"></td>
-    </tr>
-    <tr>
-        <td>Amount for Transfer</td>
-        <td><input type="number" name="amount" placeholder="Trnasfered Money"></td>
-    </tr>
-</table>
-<br>
-<div class="container">
-    <button (click)="transfer()">Transfer</button>
-    </div>
+<br><h3>Fill Details!</h3><br>
+
+    <form class="form-horizontal" action="/action_page.php">
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="sid">Sender Account Id </label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="sid" placeholder="Enter sender accountId">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="rid">Receiver Account Id</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="rId" placeholder="Enter receiverAccountId">
+          </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="amt">Amount</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" id="amt" placeholder="Enter Amount">
+            </div>
+          </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-primary" (click)="transfer()">Submit</button>&nbsp;
+            <button type="submit" class="btn btn-dark" (click)="cancel()">Back</button>
+          </div>
+        </div>
+      </form>
+      

@@ -11,5 +11,7 @@ export class MyProfileComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  save(){
+    alert("Saved Successfully");
+  }
 }

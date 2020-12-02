@@ -1,19 +1,11 @@
-<h3>Fill Details!</h3>
-<table border="3" class="center">
-    <tr>
-        <td>Account Id</td>
-        <td>
-            <input type="number" name="accountId" placeholder="Enter AccountId">
-        </td>
-    </tr>
-    <tr>
-        <td>Amount for Withdraw</td>
-        <td>
-            <input type="number" name="amount" placeholder="Enter Amount">
-        </td>
-    </tr>
-</table>
-<br>
-<div class="container">
-    <button (click)="withdraw()">Withdraw</button>
+<br><h3>Fill Details!</h3><br>
+
+<div class="center">
+    <form class="form-inline" action="/action_page.php">
+        <label for="email">Account Id: &nbsp;</label>
+        <input type="number" class="form-control" placeholder="Enter Account Id" id="email">&nbsp;&nbsp;&nbsp;
+        <label for="pwd">Amount: &nbsp;</label>
+        <input type="number" class="form-control" placeholder="Enter Amount for Withdraw" id="pwd">&nbsp;&nbsp;&nbsp;
+        <button type="button" class="btn btn-danger" (click)="withdraw()">Withdraw Money</button>
+      </form>
 </div>

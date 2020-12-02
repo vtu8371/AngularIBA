@@ -1,1 +1,63 @@
-<p>add-account works!</p>
+
+<br><div class="container">
+  <h2>{{title | titlecase}}</h2>
+  <br>            
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>AccountId</th>
+        <th>InterestRate</th>
+        <th>Balance</th>
+        <th>Date Of Opening</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+       <td>
+         <input type="number" name="id" placeholder="Enter new Account Id" required>
+       </td>
+       <td>
+         <input type="number" name="interestRate" placeholder="Enter Interest Rate" required>
+       </td>
+       <td>
+         <input type="number" name="balance" placeholder="Enter Amount" required>
+       </td>
+       <td>
+         <input type="date" name="dateOfOpening" placeholder="Enter Date Of Opening" required>
+       </td></tr>
+    </tbody>
+  </table>
+  <br>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>CustomerId</th>
+        <th>NomineeId</th>
+        <th>BeneficiaryId</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+       <td>
+         <input type="number" name="customerId" placeholder="Enter Customer Id" required>
+       </td>
+       <td>
+        <input type="number" name="nomineeId" placeholder="Enter Nominee Id" required>
+       </td>
+       <td>
+        <input type="number" name="beneficiaryId" placeholder="Enter Beneficiary Id" required>
+       </td>
+       <td>
+       <button type="button" class="btn btn-info">Edit</button>&nbsp;
+       <button type="button" class="btn btn-danger">Delete</button>
+      </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+<div class="container">
+<button type="button" class="btn btn-success">AddAccount</button>&nbsp;
+<button type="button" class="btn btn-dark" (click)="cancel()">Back</button>
+</div>

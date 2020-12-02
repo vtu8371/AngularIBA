@@ -3,31 +3,30 @@ h2{
     color: darkblue;
     width: 60%;
     background-color: lightpink;
-    font-style: italic;
     margin-left: 20%;
+    font-family: "Times New Roman", Times, serif;
 }
 h3{
     text-align: center;
     color: darkblue;
     width: 60%;
     background-color: lightpink;
-    font-style: italic;
     margin-left: 20%;
+    font-family: "Times New Roman", Times, serif;
 }
-.center{
-    margin-left: auto;
-    margin-right: auto;
-    border-collapse: collapse;
-    background-color: rgb(158, 173, 173);
+
+.container{
+    text-align: center;
 }
+
 table{
-    width: 50%;
+    width: 100%;
 }
 th{
     height: 50px;
     text-align: center;
     background-color: mediumslateblue;
-    font-style: italic;
+    font-family: "Times New Roman", Times, serif;
 }
 tr{
     height: 30px;
@@ -36,9 +35,7 @@ tr{
 h3{
     text-align: center;
 }
-.container{
-    text-align: center;
-}
+
 .button {
     background-color:blueviolet;
     border: none;
@@ -49,3 +46,6 @@ h3{
     display: inline-block;
     font-size: 16px;
   }
+.center{
+    text-align: center;
+}

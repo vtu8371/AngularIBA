@@ -1,1 +1,64 @@
-<p>list-account works!</p>
+<div class="container">
+    <br>
+    <h2>List of All Accounts Details</h2>
+    <br>            
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th>AccountId</th>
+          <th>Interest Rate</th>
+          <th>Balance</th>
+          <th>Date Of Opening</th>
+          <th>CustomerId</th>
+          <th>NomineeId</th>
+          <th>BeneficiarId</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>12345</td>
+          <td>6%</td>
+          <td>50000.00</td>
+          <td>24/11/2020</td>
+          <td>23232</td>
+          <td>32323</td>
+          <td>43434</td>
+          <td>
+            <button type="button" class="btn btn-info" (click)="goToEdit()">Edit</button>&nbsp;
+            <button type="button" class="btn btn-danger" (click)="goToDelete()">Delete</button>
+          </td>
+        </tr>
+        <tr>
+            <td>12345</td>
+            <td>6%</td>
+            <td>50000.00</td>
+            <td>24/11/2020</td>
+            <td>23232</td>
+            <td>32323</td>
+            <td>43434</td>
+            <td>
+                <button type="button" class="btn btn-info" (click)="goToEdit()">Edit</button>&nbsp;
+                <button type="button" class="btn btn-danger" (click)="goToDelete()">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>12345</td>
+            <td>6%</td>
+            <td>50000.00</td>
+            <td>24/11/2020</td>
+            <td>23232</td>
+            <td>32323</td>
+            <td>43434</td>
+            <td>
+                <button type="button" class="btn btn-info" (click)="goToEdit()">Edit</button>&nbsp;
+                <button type="button" class="btn btn-danger" (click)="goToDelete()">Delete</button>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+  <div class="class">
+    <button type="button" class="btn btn-dark" (click)="cancel()">Back</button>
+  </div>

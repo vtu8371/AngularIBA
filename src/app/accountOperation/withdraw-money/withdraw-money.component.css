@@ -1,16 +1,6 @@
 .center{
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: mediumturquoise;
+    text-align: center;
 }
 h3{
-    text-align: center;
-    background-color: lime;
-    width: 60%;
-    font-style: italic;
-    margin-left: 20%;
-}
-.container{
-    text-align: center;
+    font-family: "Times New Roman", Times, serif;
 }

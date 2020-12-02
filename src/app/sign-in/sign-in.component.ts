@@ -1,5 +1,5 @@
 import { Component, OnInit,Output,EventEmitter,Input } from '@angular/core';
-
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-sign-in',
   templateUrl: './sign-in.component.html',
@@ -9,7 +9,8 @@ export class SignInComponent implements OnInit {
 
   @Output() parentFunction:EventEmitter<string>=new EventEmitter()
   @Input() child:string;
-  constructor() { }
+  constructor(private router: Router){
+  }
   value:string="";
   onSubmit(data:any){
     console.log(data.role);
@@ -17,7 +18,11 @@ export class SignInComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.parentFunction.emit("Customer");
   }
-  
+  goToAdminPage(){
+    this.router.navigate(['./admin']);
+  }
+  goToCustomerPage(){
+    this.router.navigate(['./customer']);
+  }
 }
